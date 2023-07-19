@@ -1,0 +1,228 @@
+body{
+    /*-margen predeterminado*/
+margin: 0;
+/*margen para adentro*/
+padding: 0;
+font-size: 13px;
+font-family: Arial, Helvetica, sans-serif;
+}
+/*************************/
+/*************************/
+/*************************/
+/*Navegacion*/
+
+header{
+    width: 100%;
+    height: 55px;
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    /*eliminar viñetas*/
+    list-style: none;
+    width: 250px;
+    /*Altura automática*/
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-right-section a{
+    color: rgb(21, 21, 21);
+    /*linea debajo de texto*/
+    text-decoration: none;
+    /*margen derecho*/
+    margin-right: 25px;
+}
+
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    height: 20px;
+    width: 20px;
+    background-size: contain;
+   
+}
+
+nav .nav-right-section img{
+    margin-left: 20px;
+    border-radius: 20px;
+    width: 30px ;
+}
+
+/*************************************************/
+/********************************************/
+/***********************************/
+/* Main */
+
+
+main{
+    text-align: center;
+    margin-top: 100px;
+}
+/*seccion logo*/
+main .main-logo{
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+/*logo google*/
+main .main-logo img{
+    height: 100px;
+}
+
+/*seccion input*/
+main .main-input{
+    width: 600px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+/*cajita gris redondeada buscador*/
+main .main-input-container{
+    /*ancho de línea, estilo y color*/
+    border: 1px solid #e9e9e9;
+    /*bordes redondeados*/
+    border-radius:30px;
+    width: 600px;
+    height: 48px;
+}
+
+main .main-input input{
+ 
+    height:  45px;
+    width: 496px;
+    border:none;
+    /*quitar borde azul al hacer click*/
+    outline: none;
+}
+
+main .main-input .search-icon{
+
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-position: center;
+    width: 40px;
+    height: 20px;
+    background-size: contain;
+    padding-left: 3%;
+    background-repeat: no-repeat;   
+}
+/*ICONO DE MICRO*/
+main .main-input .micro-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png');
+    height: 30px;
+    width: 30px;
+    /*Icono contenido*/
+    background-size: contain;
+    background-repeat: no-repeat;  
+    background-position: center;  
+    cursor: pointer;
+    padding-left: 5%;
+
+}
+/*ICONO DE CAMARA*/
+main .main-input .cam-icon {
+    background-image: url('https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg');
+    background-position: center;
+    height: 20px;
+    width: 17px;
+    background-size: contain;
+    background-repeat: no-repeat;    
+    padding-right: 5%;
+  
+}
+
+
+
+/*************************************************/
+/********************************************/
+/***********************************/
+/* Buttons */
+
+main .main-button{
+    width: 500px;
+    /*centrar*/
+    margin: 0 auto;
+   
+   /* background-size: contain;
+    display: flex;
+    margin-top: 30px;
+    border-color: none; */
+}
+main .main-button div{
+    /*alenar elementos en la misma linea*/
+    display:inline-block ;
+}
+
+main .main-button button{
+    border: 0;
+    height: 35px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 4px;
+    /*margen entre los botones*/
+    margin-right: 10px;
+    /*margen para dentro, el texto*/
+    padding: 0 15px;  
+}
+/*Nos permite agregarle diseño al poner cursor sobre elemento*/
+main .main-input-container:hover{
+border-color: #dfe1e500;
+box-shadow: 1px 1px 5px #20212447; 
+}
+
+    main .main-button button:hover{
+        color: #202124;
+        /*ancho de linea, estilo de linea, color de linea*/
+        border: 1px solid #dadce0;
+        box-shadow: 0 1px 0 rgba(0,0,0,.1);
+    }
+
+    footer a:hover{
+        text-decoration-line: underline;
+    }
+
+    footer{ 
+        background-color: rgba(242,242,242,255);
+        width: 100%;
+        height: 55px;
+        display: flex;
+        margin-top: 267px;
+    }
+
+    footer .footer-left{
+        /*eliminar viñetas*/
+        list-style: none;
+        width: 50%;
+        /*Altura automática*/
+        height: auto;
+        display: flex;
+        justify-content: left;
+        padding: 10px;
+        padding-left: 3%;
+    }
+
+    footer .footer-right{
+       justify-content: right;
+       display: flex;
+        /*eliminar viñetas*/
+        list-style: none;
+        width: 50%;
+        /*Altura automática*/
+        height: auto;
+        padding: 10px;
+    }
+
+    footer  a{
+        color: #707172;
+        /*linea debajo de texto*/
+        text-decoration: none;
+        /*margen derecho*/
+        margin-right: 30px;
+       font-size: 15px;
+    }
